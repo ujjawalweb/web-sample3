@@ -1,32 +1,4 @@
-/*-----------------------------------------------------------
-    Theme Name: Wazo
-    Theme URI: 
-    Description: Wazo - Wedding Event Services HTML Template
-    Author: HiboTheme
-    Author URI: https://hibotheme.com/
-    Version: 1.0
--------------------------------------------------------------*/
-/*--------------------------------
-     =====Table Of Contents====
 
-1.  General Styles 
-2.  Mixins CSS
-3.  Back To Top Button CSS
-4.  Preloader CSS
-5.  Button & Link CSS
-6.  Section Title & Overlay & Shape CSS
-7.  Social Link CSS
-8.  Pagination CSS
-9.  Sidebar CSS
-     - Search Box Widget
-     - Taglist Widget
-     - Category Widget
-     - Filter Search Widget
-     - New Arrival Product Widget
-     - Popular Post Widget
-10. Sign In CSS
-11. FAQ Terms & Conditions
-----------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;500;600;700&amp;display=swap");
 /*---------------------------------
             General Styles 
@@ -87,7 +59,7 @@ input {
 }
 
 a {
-  color: #b48e15;
+  color: #ffae42;
   text-transform: inherit;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
@@ -118,20 +90,20 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  color: #b48e15;
+  color: #ffae42;
   font-family: "Lexend", sans-serif;
 }
 
 body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  color: #54595F;
+  color: #777777;
 }
 
 p {
   font-size: 16px;
   line-height: 26px;
-  color: #b48e15;
+  color: #ffae42;
 }
 
 select {
@@ -619,7 +591,7 @@ select {
   width: 46px;
   cursor: pointer;
   display: block;
-  border-radius: 50px;
+  border-radius: 50px;color:#ffae42;
   -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
   z-index: 10000;
@@ -647,7 +619,7 @@ select {
   text-align: center;
   line-height: 46px;
   font-size: 18px;
-  color: #000;
+  color: #ffae42;
   left: 0;
   top: 0;
   height: 46px;
@@ -851,8 +823,8 @@ select {
 }
 
 .btn.style1 {
-   background-color: rgb(180, 142, 21);
-  color:#000;
+   background-color: #ffae42;
+  color:#000;font-weight:600;
 }
 
 .btn.style1:after, .btn.style1:before {
@@ -941,7 +913,7 @@ select {
 }
 
 .link.style1 {
-  color: #b48e15;
+  color: #ffae42;
 font-weight: 200;
 }
 
@@ -952,7 +924,7 @@ font-weight: 200;
 }
 
 .link.style2 {
-  color: #1B7261;
+  color: #777777;
   font-weight: 600;
 }
 
@@ -1570,7 +1542,7 @@ font-weight: 200;
 }
 
 .social-profile.style1 li a i {
-  color: #051145;
+  color: #000;
 }
 
 .social-profile.style1 li a:hover {
@@ -1652,9 +1624,9 @@ font-weight: 200;
 }
 
 .page-nav li a.active, .page-nav li a:hover {
-  color: #fff;
+  color: #000;
   opacity: 1;
-  background-color: rgb(180, 142, 21);}
+  background-color: #ffae42;}
 
 .page-nav li a.active i, .page-nav li a:hover i {
   color: #fff;
@@ -1858,7 +1830,7 @@ font-weight: 200;
 
 .header-wrap .header-top .header-top-right .social-profile li a {
   width: 30px;
-  height: 30px;background-color: #b48e15;color: #ccc9bd;
+  height: 30px;background-color: #ffae42;color: #ccc9bd;
 }
 
 .header-wrap .header-top .header-top-right .social-profile li a i {
@@ -1884,7 +1856,7 @@ font-weight: 200;
   width: 100%;
   z-index: -1;
   height: 67%;
-  background-color: #b48e15;
+  background-color: #ffae42;
 }
 
 .header-wrap.style1 .header-bottom {
@@ -1901,7 +1873,7 @@ font-weight: 200;
 }
 
 .header-wrap.style1 .header-top .header-top-left .contact-info li span, .header-wrap.style2 .header-top .header-top-left .contact-info li span {
-  background-color: #b48e15;
+  background-color: #ffae42;
 }
 
 .header-wrap.style1 .header-top .header-top-left .contact-info li span i, .header-wrap.style2 .header-top .header-top-left .contact-info li span i {
@@ -1929,7 +1901,7 @@ font-weight: 200;
 }
 
 .header-wrap.style1 .header-top .header-top-right .social-profile li a i, .header-wrap.style2 .header-top .header-top-right .social-profile li a i {
-  color: #051145;
+  color: #000;font-weight: 700;
 }
 
 .header-wrap.style1 .header-top .header-top-right .social-profile li a:hover, .header-wrap.style2 .header-top .header-top-right .social-profile li a:hover {
@@ -2043,6 +2015,22 @@ font-weight: 200;
   top: 2px;
 }
 
+@media only screen and (max-width: 767px){
+.product-card {
+    background-color: rgb(20 20 20) !important;
+
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  height: 459px;}
+
+}
+
+
 .shopcart span {
   position: absolute;
   top: -4px;
@@ -2051,6 +2039,7 @@ font-weight: 200;
   height: 20px;
   border-radius: 50%;
   background-color: #1B7261;
+  display: none;
   text-align: center;
   color: #fff;
   font-size: 11px;
@@ -2545,7 +2534,7 @@ font-weight: 200;
     height: 38px;
     border-radius: 62% 38% 46% 54% / 60% 63% 37% 40%;
     text-align: center;
-    background-color: #1B7261;
+    background-color: #ffae42;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2664,7 +2653,7 @@ font-weight: 200;
     margin-left: 0;
   }
   .header-wrap .navbar .navbar-nav .nav-item a {
-    color: #b48e15;
+    color: #ffae42;
     font-weight: 400;
     padding: 30px 0;
     -webkit-transition: 0.4s;
@@ -2672,7 +2661,7 @@ font-weight: 200;
     position: relative;
   }
   .header-wrap .navbar .navbar-nav .nav-item a:hover, .header-wrap .navbar .navbar-nav .nav-item a:focus, .header-wrap .navbar .navbar-nav .nav-item a.active {
-    color: #b48e15;
+    color: #ffae42;
   }
   .header-wrap .navbar .navbar-nav .nav-item a i {
     font-size: 16px;
@@ -3144,7 +3133,7 @@ font-weight: 200;
   line-height: 1;
   position: relative;
   padding-bottom: 20px;
-  border-bottom: 1px solid #b48e15;
+  border-bottom: 1px solid #ffae42;
 }
 
 .sidebar .sidebar-widget h4:after {
@@ -3154,7 +3143,7 @@ font-weight: 200;
   width: 24px;
   height: 3px;
   content: "";
-  background: #b48e15;
+  background: #ffae42;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -3199,11 +3188,11 @@ font-weight: 200;
   border: none;
   border-radius: 0;
   text-align: center;
-  background-color: rgb(180, 142, 21);
+  background-color: #ffae42;
 }
 
 .search-box .form-group button i {
-  color: #fff;
+  color: #000;
   font-size: 20px;
   position: relative;
 }
@@ -3256,7 +3245,7 @@ font-weight: 200;
 }
 
 .category-box.style2 li a {
-  color: #b48e15;
+  color: #ffae42;
   padding: 8px 10px 8px 20px;
   display: block;
   -webkit-transition: 0.4s;
@@ -3271,7 +3260,7 @@ font-weight: 200;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #b48e15;
+  background-color: #ffae42;
 }
 
 .category-box.style2 li a span {
@@ -3887,7 +3876,7 @@ font-weight: 200;
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background-color: rgb(180, 142, 21);
+  background-color: #ffae42;
   text-align: center;
   margin: 0 auto 10px;
   position: relative;
@@ -3916,7 +3905,7 @@ font-weight: 200;
   font-size: 43px;
   line-height: 86px;
   margin: 0 auto;
-  color: #beccc9;
+  color: #000;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -4771,7 +4760,7 @@ font-weight: 200;
 
 .product-card {
   margin-bottom: 25px;
-  background-color: rgb(212 212 212);
+  background-color: rgb(20, 20, 20);
   -webkit-box-shadow: 0px 6px 20px rgba(5, 17, 69, 0.08);
           box-shadow: 0px 6px 20px rgba(5, 17, 69, 0.08);
 }
@@ -4996,7 +4985,7 @@ font-weight: 200;
   border-radius: 5px;
   padding: 10px 15px 10px 15px;
   color: #393939;
-  background-color: #ECF0F2;
+  background-color: #ffae42;
   font-size: 14px;
   height: 55px;
   border: none;
@@ -5483,7 +5472,7 @@ font-weight: 200;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);background-color: #b48e15;
+  transform: translateY(-50%);background-color: #ffae42;
   -webkit-box-shadow: 0px 0px 12px rgba(17, 17, 17, 0.04);
           box-shadow: 0px 0px 12px rgba(17, 17, 17, 0.04);
 }
@@ -5904,7 +5893,7 @@ font-weight: 200;
 }
 
 .testimonial-slider-one .testimonial-card.style1 {
-  margin: 0;background-color: #d7d7d7;
+  margin: 0;    background-color: rgb(20, 20, 20);
 }
 
 .testimonial-slider-one .testimonial-card.style2 {
@@ -7346,13 +7335,13 @@ article {
   position: relative;
   top: 3px;
   background-color: transparent;
-  border: 1px solid #b48e15;
+  border: 1px solid #ffae42;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .contact-item .contact-icon i {
-  color: #b48e15;
+  color: #ffae42;
   line-height: 0.8;
   font-size: 36px;
   position: relative;
@@ -7412,7 +7401,7 @@ article {
 #contactForm .form-group textarea {
   width: 100%;
   background: transparent;
-  border: 1px solid #b48e15;
+  border: 1px solid #ffae42;
   padding: 10px 15px;
   border-radius: 0;
 }
@@ -7464,7 +7453,7 @@ article {
 
 .checkbox label {
   position: relative;
-  cursor: pointer;color:#b48e15;
+  cursor: pointer;color:#ffae42;
   padding-left: 20px;
 }
 
@@ -7691,7 +7680,7 @@ article {
   position: relative;
   font-size: 22px;
   font-weight: 500;
-  color: #b48e15;
+  color: #ffae42;
   margin-bottom: 35px;
   padding-bottom: 12px;
 }
@@ -7713,7 +7702,7 @@ article {
   content: "";
   width: 51px;
   height: 2px;
-  background-color: rgb(180, 142, 21);
+  background-color: #ffae42;
 }
 
 .featurette-heading{font-size:23px;}
@@ -7735,7 +7724,7 @@ article {
 }
 
 .footer-wrap .footer-widget .social-link .social-profile.style1 li a {
-  background-color: #b48e15;
+  background-color: #ffae42;
   width: 30px;
   height: 30px;
 }
@@ -7765,7 +7754,7 @@ article {
 }
 
 .footer-wrap .footer-widget .footer-menu li a {
-  color: #b48e15;
+  color: #ffae42;
   position: relative;
   padding-left: 15px;
 }
@@ -7979,5 +7968,5 @@ article {
   background-color: #94be5d;
 }
 
-.colors{color: #b48e15 !important;}
+.colors{color: #ffae42 !important;}
 /*# sourceMappingURL=style.css.map */
